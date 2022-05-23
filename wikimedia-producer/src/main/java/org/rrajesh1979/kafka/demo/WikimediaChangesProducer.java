@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class WikimediaChangesProducer {
     static final String BOOTSTRAP_SERVERS = "localhost:9092";
-    static final String TOPIC = "wikimedia_recentchange";
+    static final String TOPIC = "wikimedia";
     static final String URL = "https://stream.wikimedia.org/v2/stream/recentchange";
 
     public static void main(String[] args) throws InterruptedException{
@@ -47,7 +47,7 @@ public class WikimediaChangesProducer {
             //Start EventSource
             eventSource.start();
 
-            TimeUnit.MINUTES.sleep(10);
+            TimeUnit.MINUTES.sleep(1);
         }
     }
 }
