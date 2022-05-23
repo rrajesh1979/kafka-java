@@ -1,3 +1,5 @@
 rootProject.name = 'kafka-java'
 include 'kafka-basics'
+include 'wikimedia-producer'
+include 'wikiedia-consumer'
 
